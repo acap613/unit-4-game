@@ -46,7 +46,7 @@
       <p class="name" id="Solo" >
             <img src="./assets/images/Solo.jpg">Han Solo
             <p class="health"><span id="solo-health"></span></p>
-            
+
       <p class="name" id="Fett">
             <img src="./assets/images/Fett.jpg">Boba Fett
             <p class="health"><span id="fett-health"></span></p>
@@ -57,12 +57,12 @@
             <h3>Pick an Enemy to Fight!</h3> 
         </div>
     </div> 
-    
+                    <!-- still need to figure out how to make these character "cards" interact with javascript -->
       
     <br>
 
 
-
+                                        <!-- lets steal an attack button from somewhere -->
         <div class="row">
             <div class="col-12 btn">
                 <div id="msg"></div>
@@ -71,11 +71,17 @@
             </div>
         </div>
     <br>
-    <!-- the other three go to the battle arena and are now "enemies" -->
+                                <!-- the other three go to the battle arena and are now "enemies" -->
     <br>
-    <div class="attacker">Attacker zone</div>
-    <div class="defender">Defender zone</div>
-    <div class="defeated">Defeated characters</div>
+    <div class="attack-zone">
+        <p class="col-6 text-left">Attacker zone</p>
+    </div>
+    <div class="defend-zone">
+        <p class="col-12 text-right">Defender zone</p>
+    </div>
+    <div class="defeated-zone">
+            <p class="col-12 text-center">Defeated characters</p>
+    </div>
 
 
 
