@@ -23,23 +23,3 @@ p {
     color: white;
 }
 
-.attacker {
-    font-size: 25px;
-    color: rgb(0, 192, 192);
-    background: grey;
-    opacity: 0.3;
-    width: 40%;
-    height: auto;
-    float: left;
-}
-
-.defender {
-    font-size: 25px;
-    color: rgb(192, 0, 80);
-    background: grey;
-    opacity: 0.3;
-    width: 40%;
-    height: auto;
-    float: right;
-
-}

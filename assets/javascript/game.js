@@ -27,7 +27,7 @@
 
 
 
-     function reset() {
+    
 
         // lets make the characters
         var characters = {
@@ -63,17 +63,26 @@
                     counterAttackPower: 18,
                     image: '<img src="./assets/images/Solo.jpg" class="image">'
                 },
-            }
+            
         // lets make the game work:
         // starting with character selection
         };   
         $(document).readyState(function() {
             reset();
-
+        //create an onclick event or something to get the attacker choice to the attacker zone
             $(".name").click(function(){
+                if (pickAttacker == "") {
+                    console.log(this);
+                    $(this).appendTo(".attack-zone");
+                    pickAttacker = $(this);
+                    myAttacker = $(pickAttacker).attr("value");
+                }
 
-                
+
+
+
             })
+        //create an onclick event to get the defender choice into the defender zone
         });
     
           
