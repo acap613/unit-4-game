@@ -19,37 +19,44 @@
 
 <body>
     <!-- pseudo coding the initial layout for this game -->
-
-      <div class="row">
-                <div class="col-6" id="swrpg">
+<!-- start with a row for the star wars header-->
+        <div class="row">
+                <div class="col-12 text-center" id="swrpg">
                     <h1>STAR WARS Battle Arena</h1>
                 </div>
-               
-                <div class="col-6" id="pick">
-                    <h3>Pick a Hero to Start!</h3> 
-                </div>
-      </div>  
+        </div> 
+        <div class="row">
+            <div class="col-12 text-center" id="pick-attacker">
+                <h3>Pick a Hero to Start!</h3> 
+            </div>
+        </div> 
         
     <!-- character selection -->
     
     <div class="row" id="cardRow">
-      <p class="name" id="Luke">Luke Skywalker</p>
+      
+        <p class="name" id="Luke">Luke Skywalker</p>
             <img src="./assets/images/Luke.jpg" id="img1">
-        <p class="health"><span id="luke-health"></span></p>
+            <p class="health"><span id="luke-health"></span></p>
         
       <p class="name" id="Vader">Darth Vader</p>
             <img src="./assets/images/Vader.jpg">
-        
+            <p class="health"><span id="vader-health"></span></p>
+
       <p class="name" id="Solo" >
             <img src="./assets/images/Solo.jpg">Han Solo
-        
+            <p class="health"><span id="solo-health"></span></p>
+            
       <p class="name" id="Fett">
             <img src="./assets/images/Fett.jpg">Boba Fett
-        
+            <p class="health"><span id="fett-health"></span></p>
     </div>
     <br>
-
-    <h3>Then Pick a Hero to fight against!</h3>
+    <div class="row">
+        <div class="col-12 text-center" id="pick-defender">
+            <h3>Pick an Enemy to Fight!</h3> 
+        </div>
+    </div> 
     
       
     <br>
