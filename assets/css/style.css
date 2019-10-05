@@ -3,6 +3,7 @@
 body {
     
     font-size:19px;
+    width: 100%;
     
     
     background-image: url("../images/Death-Star.PNG");
@@ -17,7 +18,7 @@ h3 {
     color: yellow;
 }
 
-a {
+p {
     text-decoration: none;
     color: white;
 }

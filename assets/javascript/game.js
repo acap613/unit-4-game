@@ -66,13 +66,18 @@
             }
         // lets make the game work:
         // starting with character selection
-        function startGame() {
+        };   
+        $(document).readyState(function() {
+            reset();
+
+            $(".name").click(function(){
+
+                
+            })
+        });
     
-            createCharacters(characterPick);
-            pickAttacker();
-            pickDefender();
-           
-        }
+          
+        
         // need to move the character selected as "player" div move into "attacker" div, onClckEvent?
        
         // after which we need to move the character selected as "defender" div into the area called "defender" div:
