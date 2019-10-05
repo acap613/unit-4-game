@@ -7,36 +7,45 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <title>Star Wars Battle Arena</title>
    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css"> 
     <link href="./assets/javascript/game.js">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+
 
 </head>
 
 <body>
     <!-- pseudo coding the initial layout for this game -->
-      <div class="header">
-            <h1>STAR WARS Battle Arena</h1>
-            <br>
-            <h3>Pick a Hero to begin</h3>
-            <br>
+
+      <div class="row">
+                <div class="col-6" id="swrpg">
+                    <h1>STAR WARS Battle Arena</h1>
+                </div>
+               
+                <div class="col-6" id="pick">
+                    <h3>Pick a Hero to Start!</h3> 
+                </div>
       </div>  
         
     <!-- character selection -->
     
-    <div class="char-sel">
-        <a href="#">
-            <img src="./assets/images/Luke.jpg">Luke
-        </a>
-        <a href="#">
-            <img src="./assets/images/Vader.jpg">Darth Vader
-        </a>
-        <a href="#">
+    <div class="row" id="cardRow">
+      <p class="name" id="Luke">Luke Skywalker</p>
+            <img src="./assets/images/Luke.jpg" id="img1">
+        <p class="health"><span id="luke-health"></span></p>
+        
+      <p class="name" id="Vader">Darth Vader</p>
+            <img src="./assets/images/Vader.jpg">
+        
+      <p class="name" id="Solo" >
             <img src="./assets/images/Solo.jpg">Han Solo
-        </a>
-        <a href="#">
+        
+      <p class="name" id="Fett">
             <img src="./assets/images/Fett.jpg">Boba Fett
-        </a>
+        
     </div>
     <br>
 
@@ -47,7 +56,13 @@
 
 
 
-    <button type="button">Attack</button>
+        <div class="row">
+            <div class="col-12 btn">
+                <div id="msg"></div>
+                <br>
+                <button type="button" name="attack" id="attackBtn" class="btn btn-primary btn-lg">ATTACK!</button>
+            </div>
+        </div>
     <br>
     <!-- the other three go to the battle arena and are now "enemies" -->
     <br>
